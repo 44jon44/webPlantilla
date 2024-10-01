@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+:root{
+	--principal:red;
+	
+	
+	--fuenteSans: 'Helvetica Neue', Arial, sans-serif;
+	--fuenteSerif: 'Georgia', 'Times New Roman', serif;
+	
+	--alturaCabecera: 120px;
+	--alturaPie: 40px;
+	--alturaMenu: 40px;
+	
+	--sizeH1:60px;
+	
+	--paddingGeneral:10px;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	
+	font-family: var(--fuenteSans);
+}
+
+
+/*   cabecera    */
+header{
+	background-color: green;
+	width:100%;
+	height:  var(--alturaCabecera);	
+	padding:var(--paddingGeneral);
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	
+}
+
+h1{
+	font-family: var(--fuenteSerif);
+	font-size: var(--sizeH1) ;
+	background-color: pink;
+}
+
+
+/*   menu    */
+nav{
+	background-color: orange;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+nav ul li{
+	background-color:cyan;
+	list-style-type: none;
+	
+}
+
+nav ul li a{
+	background-color:yellow;
+	height:var(--alturaMenu);
+	width:180px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+/*main*/
+
+main{
+	min-height: calc(100vh - 
+		calc(var(--alturaCabecera) + var(--alturaPie) + 
+		var(--alturaMenu) + calc(4 * var(--paddingGeneral))));
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;	
+		
+}
+
+section{
+	width:100%;
+	background-color:fuchsia;
+	padding:var(--paddingGeneral);
+}
+
+aside{
+	width:500px;
+	background-color:silver;
+	padding:var(--paddingGeneral);
+}
+
+
+
+
+/*Pie*/
+footer{
+	
+	background-color: green;
+	width:100%;
+	height:  var(--alturaPie);	
+	padding:var(--paddingGeneral);
+	
+}
+
+
+
+
+
+
+
+
+
